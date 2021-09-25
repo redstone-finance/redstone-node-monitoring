@@ -1,5 +1,5 @@
 # redstone-node-monitoring
-This module can be used to set up monitoring for [redstone-node](https://github.com/redstone-finance/redstone-node). Is is a Node.js application that is executed in a loop. In each loop iteration multiple checkers are executed:
+This module can be used to set up monitoring for [redstone-node](https://github.com/redstone-finance/redstone-node). It is a Node.js application that is executed in a loop. In each loop iteration multiple checkers are executed:
 - [ArPriceReturnedRedstoneRapid](checkers/ar-price-returned-redstone-rapid.js)
 - [ArPriceReturned](checkers/ar-price-returned.js)
 - [ArweaveTimestampDelay](checkers/arweave-timestamp-delay.js)
@@ -7,6 +7,8 @@ This module can be used to set up monitoring for [redstone-node](https://github.
 - [StockPricesReturnedRedstoneStocks](checkers/stock-prices-returned-redstone-stocks.js)
 - [TimestampIsCloseToNowRedstoneRapid](checkers/timestamp-is-close-to-now-redstone-rapid.js)
 - [TimestampIsCloseToNow](checkers/timestamp-is-close-to-now.js)
+
+You can implement your own checker, which should extend [Checker](checkers/checker.js) class.
 
 ## Run locally
 
