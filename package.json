@@ -1,0 +1,16 @@
+{
+  "name": "api-checker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node run-single-iteration",
+    "start:repeated": "node run-repeated-checking.js",
+    "start:repeated:local": "MODE=LOCAL node run-repeated-checking.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "consola": "^2.15.3",
+    "redstone-api": "^0.4.3"
+  }
+}
