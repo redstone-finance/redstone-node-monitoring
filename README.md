@@ -4,7 +4,7 @@ This module can be used to set up monitoring for [redstone-node](https://github.
 
 **Checker** - a module responsible for data intergtity checking. It can check the number of saved data points during last 5 minutes or the timestamp of the latest saved data point.
 
-**Reporter** - a module responsible for error/warning reporting. It can notify a node operator via email, SMS or discord. It can also save a notification to a text file.
+**Reporter** - a module responsible for error/warning reporting. For example, it can notify a node operator via email, SMS or discord. It can also save a notification to a text file. Currently we send email notifications to our developer team and save logs in AWS Cloudwatch.
 
 ### Implemented checkers
 - [ArPriceReturnedRedstoneRapid](checkers/ar-price-returned-redstone-rapid.js)
